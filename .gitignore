@@ -28,3 +28,7 @@ yarn-error.log*
 
 # environment variable
 .env
+
+# logs
+/iisnode
+/logs

@@ -64,3 +64,5 @@ logDirectory: logs
 
 debuggingEnabled: false
 maxLogFileSizeInKB: 128
+
+test
