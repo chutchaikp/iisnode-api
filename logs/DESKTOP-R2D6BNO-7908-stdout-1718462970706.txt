@@ -1,0 +1,45 @@
+Server listening host: undefined port: undefined 
+RequestError: Conversion failed when converting date and/or time from character string.
+    at handleError (C:\websites\api\node_modules\mssql\lib\tedious.js:876:15)
+    at Connection.emit (node:events:519:28)
+    at Parser.<anonymous> (C:\websites\api\node_modules\tedious\lib\connection.js:618:16)
+    at Parser.emit (node:events:519:28)
+    at Parser.<anonymous> (C:\websites\api\node_modules\tedious\lib\token\token-stream-parser.js:54:15)
+    at Parser.emit (node:events:519:28)
+    at addChunk (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Readable.push (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Transform.push (C:\websites\api\node_modules\readable-stream\lib\_stream_transform.js:148:32) {
+  code: 'EREQUEST',
+  number: 241,
+  lineNumber: 19,
+  state: 1,
+  class: 16,
+  serverName: 'DATABASE',
+  procName: 'm_Speed',
+  originalError: Error: Conversion failed when converting date and/or time from character string.
+      at handleError (C:\websites\api\node_modules\mssql\lib\tedious.js:874:19)
+      at Connection.emit (node:events:519:28)
+      at Parser.<anonymous> (C:\websites\api\node_modules\tedious\lib\connection.js:618:16)
+      at Parser.emit (node:events:519:28)
+      at Parser.<anonymous> (C:\websites\api\node_modules\tedious\lib\token\token-stream-parser.js:54:15)
+      at Parser.emit (node:events:519:28)
+      at addChunk (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+      at readableAddChunk (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+      at Readable.push (C:\websites\api\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+      at Transform.push (C:\websites\api\node_modules\readable-stream\lib\_stream_transform.js:148:32) {
+    info: {
+      number: 241,
+      state: 1,
+      class: 16,
+      message: 'Conversion failed when converting date and/or time from character string.',
+      serverName: 'DATABASE',
+      procName: 'm_Speed',
+      lineNumber: 19,
+      name: 'ERROR',
+      event: 'errorMessage'
+    }
+  },
+  precedingErrors: []
+}
+origin: undefined

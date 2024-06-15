@@ -1,0 +1,4 @@
+Server listening host: undefined port: undefined 
+Whitelist:["http://monitor.fleetlocate.asia","http://localhost:3000","http://127.0.0.1:5000/api/dlt_device_inactive_internal"]
+origin: undefined
+111111111

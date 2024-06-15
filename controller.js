@@ -21,7 +21,6 @@ async function getTodo(req, res) {
     // console.log(`req.url: ${req.url}`)
     const url = "https://jsonplaceholder.typicode.com/todos"
     const response = await axios.get(url)
-
     console.log(response.data)
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(response.data));
