@@ -18,6 +18,12 @@ app.get("/api/hello", function (req, res) {
   res.send("Hello Express :)")
 })
 
+app.get("/api/log", function (req, res) {
+  const str = "Et officia sint Lorem culpa tempor sint ullamco voluptate nostrud labore eiusmod cupidatat non.";
+  console.log(str)
+  res.send("Hello Express :)")
+})
+
 app.get("/api/history/:vehicleID/:dateFrom/:dateTo", function (req, res) {
   var { vehicleID, dateFrom, dateTo } = req.params
 
