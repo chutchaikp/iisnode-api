@@ -1,0 +1,66 @@
+
+### Latest version:
+https://github.com/Azure/iisnode/releases
+
+---
+
+### Sample configuration:
+https://github.com/tjanczuk/iisnode/blob/master/src/samples/configuration/iisnode.yml#L120-L122
+
+---
+
+Hello World
+===
+
+Sample **bold**
+
+---
+> Blockquotes
+>
+> hello
+>
+> world
+---
+This is code `const [loading, isLoading] = useState(false)` and the rest text
+---
+```js
+useEffect(() => {
+  console.log("hello");
+}, [])
+```
+---
+### Image how to
+![The San Juan Mountains are beautiful!](https://media.licdn.com/dms/image/D4D12AQFdsGsHzickLA/article-cover_image-shrink_600_2000/0/1678211935896?e=2147483647&v=beta&t=YMbLcv4Whjt6ie_xaCWVhknA23rOJqeZhZnH8g-Uy-U)
+---
+
+<img src="https://media.licdn.com/dms/image/D4D12AQFdsGsHzickLA/article-cover_image-shrink_600_2000/0/1678211935896?e=2147483647&v=beta&t=YMbLcv4Whjt6ie_xaCWVhknA23rOJqeZhZnH8g-Uy-U" height="100">
+
+---
+
+### IISnode - making the node process always working:
+> It's a little bit funny but I found the next solution good enough for me:
+
+1. Open IIS(intemgr).
+2. Go to Application Pools.
+3. Right click on the pool which runs your nodeJS app.
+4. Choose Advanced Settings.
+5. Set "Idle Time-Out" under the Process Model section to "0".
+
+After you browse to your app for the first time it will never shut down due to being idle.
+
+### More
+
+<iisnode 
+      loggingEnabled="true" 
+      devErrorsEnabled="true" 
+      maxLogFiles="100"
+      nodeProcessCommandLine="node.exe --trace-deprecation"
+    />
+
+loggingEnabled: true
+
+logDirectory: iisnode
+logDirectory: logs
+
+debuggingEnabled: false
+maxLogFileSizeInKB: 128
